@@ -19,7 +19,35 @@
     <div class="container">
       <div class="weather-app-wrapper">
         <div class="weather-app">
-          <div class="class mainCity">
+          <form id="search-form" class="mb-4">
+            <div class="row">
+              <div class="col-8">
+                <input
+                  type="search"
+                  class="form-control shadow-sm"
+                  placeholder="Enter your city..."
+                  id="city-input"
+                  autocomplete="off"
+                />
+              </div>
+              <div class="col-2">
+                <input
+                  type="submit"
+                  class="btn btn-primary shadow-sm w-100"
+                  value="Search"
+                />
+              </div>
+              <div class="col-2">
+                <button
+                  class="btn button-location shadow-sm"
+                  id="current-button"
+                >
+                  📍
+                </button>
+              </div>
+            </div>
+          </form>
+          <div class="mainCity">
             <h1 id="city"></h1>
             <ul>
               <li id="date"></li>
